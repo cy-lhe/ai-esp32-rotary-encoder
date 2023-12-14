@@ -58,6 +58,7 @@ private:
 	bool previous_butt_state;
 
 	ButtonState buttonState;
+	bool wasTimeouted = false;
 
 	int8_t enc_states[16] = {0, -1, 1, 0, 1, 0, 0, -1, -1, 0, 0, 1, 0, 1, -1, 0};
 	void (*ISR_callback)();
